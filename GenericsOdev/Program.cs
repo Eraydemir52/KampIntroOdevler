@@ -6,14 +6,20 @@ namespace GenericsOdev
     {
         static void Main(string[] args)
         {
-            MyDictionary<int> myDictionary = new MyDictionary<int>();
-            myDictionary.Add(3);
-            myDictionary.Add(4);
-            myDictionary.Add(5);
-            myDictionary.Add(6);
-            myDictionary.Add(7);
+            MyDictionary<string> myDictionary = new MyDictionary<string>();
+            myDictionary.Add("Eray");
+            myDictionary.Add("Sefa");
+            myDictionary.Add("Murat");
+            myDictionary.Add("Mehmet");
+            myDictionary.Add("Mustafa");
             Console.WriteLine(myDictionary.Count);
-          
+
+            foreach (var isim in myDictionary.item)
+            {
+                Console.WriteLine(isim);
+            }
+
+
         }
     }
 }

@@ -20,7 +20,7 @@ namespace GenericsOdev
             array = new T[array.Length + 1];
             for (int i = 0; i < temparray.Length; i++)
             {
-                temparray[i] = array[i];
+                array[i] = temparray[i];
             }
 
             array[array.Length - 1] = item;
@@ -30,7 +30,12 @@ namespace GenericsOdev
        {
             get {return array.Length; }
        }
-       
+        public T[] item
+        {
+            get { return array; }
+        }
+
+
 
     }
 }
